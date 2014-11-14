@@ -1,3 +1,5 @@
 = gam3
 
-Description goes here
+ran:
+  ruby script/rails generate redmine_plugin gam3
+
