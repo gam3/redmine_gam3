@@ -1,8 +1,12 @@
 Redmine::Plugin.register :gam3 do
   name 'Gam3 plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
+  author 'G. Allen Morris III'
+  description 'Misc enhancements for Redmine'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  url 'http://www.gam3.net/redmine/gam3.html'
+  author_url 'http://github.com/gam3'
+end
+
+ActionDispatch::Reloader.to_prepare do
+  require 'macros'
 end
